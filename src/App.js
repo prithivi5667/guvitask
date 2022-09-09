@@ -54,6 +54,8 @@ function App() {
     }
   }
   const [getuser,setuser]=useState([])
+  Axios.defaults.headers.post['Content-Type'] ='application/json;charset=utf-8';
+  Axios.defaults.headers.post['Access-Control-Allow-Origin'] = '*';
 if(currentUser.id){
  
     Axios.get(`http:5000/api/user/get/${currentUser.id}`).then(res=>{
