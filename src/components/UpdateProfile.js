@@ -36,7 +36,7 @@ const UpdateProfile = (props) => {
     console.log(data);
 
     axios
-      .put(`http://localhost:5000/api/user/${userid}`, data)
+      .put(`https://guvipt.herokuapp.com/api/user/${userid}`, data)
       .then(function (response) {
         console.log(response.status);
         if (response.status === 200) {

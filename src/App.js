@@ -56,7 +56,7 @@ function App() {
   const [getuser,setuser]=useState([])
 
 useEffect(() => {
-  Axios.get(`http://localhost:5000/api/user/get/${currentUser.id}`).then(res=>{
+  Axios.get(`https://guvipt.herokuapp.com/api/user/get/${currentUser.id}`).then(res=>{
     
      setuser(res.data)
    }).catch(err=>{
