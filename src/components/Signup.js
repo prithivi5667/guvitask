@@ -49,7 +49,7 @@ const Signup = () => {
         console.log(data);
     
         axios
-          .post("http://localhost:5000/api/user/register", data)
+          .post("https://guvipt.herokuapp.com/api/user/register", data)
           .then(function (response) {
             console.log(response.status);
             if (response.status === 200) {
