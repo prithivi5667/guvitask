@@ -22,7 +22,7 @@ const Login = (props) => {
 
         const userData = { email, password };
 
-        axios.post('http://localhost:5000/api/user/login', userData)
+        axios.post('https://guvipt.herokuapp.com/api/user/login', userData)
         .then(response => {
             const { token } = response.data;
             // Save token to localStorage
